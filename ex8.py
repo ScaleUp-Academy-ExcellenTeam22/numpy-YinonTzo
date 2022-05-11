@@ -1,7 +1,8 @@
 import numpy as np
+import nptyping
 
 
-def replace_all_values_are_equal(matrix, old_val, new_val):
+def replace_all_values_are_equal(matrix: nptyping.ndarray, old_val: int, new_val: int) -> nptyping.ndarray:
     """
     Replace all values are equal to old_val with new_val.
     :param matrix: Matrix to work with.
@@ -12,7 +13,7 @@ def replace_all_values_are_equal(matrix, old_val, new_val):
     return np.where(matrix == old_val, new_val, matrix)
 
 
-def replace_all_values_are_less(matrix, old_val, new_val):
+def replace_all_values_are_less(matrix: nptyping.ndarray, old_val: int, new_val: int) -> nptyping.ndarray:
     """
     Replace all values are less than old_val with new_val.
     :param matrix: Matrix to work with.
@@ -23,7 +24,7 @@ def replace_all_values_are_less(matrix, old_val, new_val):
     return np.where(matrix < old_val, new_val, matrix)
 
 
-def replace_all_values_are_greater(matrix, old_val, new_val):
+def replace_all_values_are_greater(matrix: nptyping.ndarray, old_val: int, new_val: int) -> nptyping.ndarray:
     """
     Replace all values are greater than old_val with new_val.
     :param matrix: Matrix to work with.
