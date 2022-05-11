@@ -1,7 +1,8 @@
 import numpy as np
+import nptyping
 
 
-def change_sign_in_range(arr: np.array, start_range: int, end_range: int) -> None:
+def change_sign_in_range(arr: nptyping.ndarray, start_range: int, end_range: int) -> None:
     """
     Change the sign of the numbers in the range from min_range to max_range.
     :param arr: Arr to be changed.
