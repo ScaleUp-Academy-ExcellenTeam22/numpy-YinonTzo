@@ -29,7 +29,7 @@ def main() -> None:
     """
     Create 1-D and 2-D array, combine them by indexes,
     and show the combination.
-
+    https://www.w3resource.com/python-exercises/numpy/python-numpy-exercise-74.php
     """
     one_d_array = np.arange(4)
     two_d_array = np.arange(8).reshape(2, 4)
